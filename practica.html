@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=PT+Serif:ital@1&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Descripcion" content="En esta pagina vas a conocer un poco acerca de la escala de varios personajes de anime.">
+    <title>Guerra de animes.</title>
+</head>
+<body>
+<nav>
+    <div class="mobile">
+        <div class="header">
+            <div class="logo">Logo</div>
+            <div class="more"> <button id="Bmore">More</button> </div>
+            <div id="link" class="link">
+                <a href="#">Inicio</a>
+                <a href="#">historias</a>
+                <a href="#">Contactos</a>
+                <a href="#">Datos</a>
+                <a href="#">Escalas</a>
+                <a href="#">login</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="desktop">
+        <div class="logo">Logo</div>
+
+        <div class="primary">
+            <a href="#">Inicio</a>
+            <a href="#">historias</a>
+            <a href="#">Contactos</a>
+        </div>
+
+        <div class="secondary full">
+            <a href="#">Datos</a>
+            <a href="#">Escalas</a>
+            <a href="#">login</a>
+        </div>
+
+        <div class="secondary mini">
+            <a href="#" class="more">More</a>
+            <div class="submenu">
+                <a href="#">Datos</a>
+                  <a href="#">Escalas</a>
+                <a href="#">login</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<script>
+    const Bmore = document.querySelector ('#Bmore');
+    const link = document.querySelector('#link');
+
+    Bmore.addEventListener('click', e => {
+        link.classListe.toggle('collapsed')
+     });
+</script>
+</body>
+</html>
+ 
